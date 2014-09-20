@@ -1,34 +1,50 @@
 package com.zyh.resume;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.os.Handler;
+
+import com.zyh.resume.util.AppUtils;
 
 public class Splash extends Activity {
+
+	private Handler handler = new Handler() {
+		public void handleMessage(android.os.Message msg) {
+			if (sp.getBoolean("showguide", true)) enterGuide();
+			else enterHome();
+		};
+	};
+	private SharedPreferences sp;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_splash);
+
+		sp = getSharedPreferences("config", MODE_PRIVATE);
+		// 创建桌面图标
+		AppUtils.installShortCut(this, "com.zyh.resume.Splash");
+		handler.sendEmptyMessageDelayed(200, 2000);// 延迟两秒
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.splash, menu);
-		return true;
+	/**
+	 * 进入主页
+	 */
+	private void enterHome() {
+		startActivity(new Intent(this, HomeActivity.class));
+		this.finish();
+		overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
-	}
+	/**
+	 * 进入引导页
+	 */
+	private void enterGuide() {
+		startActivity(new Intent(this, GuideActivity.class));
+		this.finish();
+		overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
+	};
+
 }
