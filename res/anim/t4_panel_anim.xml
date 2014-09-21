@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    android:fillEnabled="true"
+    android:shareInterpolator="true" >
+
+    <rotate
+        android:duration="250"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        android:fromDegrees="0.0"
+        android:toDegrees="15.0"
+        android:pivotX="47%"
+        android:pivotY="6%"
+        />
+    
+    <rotate
+        android:duration="350"
+        android:startOffset="250"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        android:fromDegrees="0.0"
+        android:toDegrees="-25.0"
+        android:pivotX="47%"
+        android:pivotY="6%"
+        />
+    <rotate
+        android:duration="300"
+        android:startOffset="600"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        android:fromDegrees="0.0"
+        android:toDegrees="20.0"
+        android:pivotX="47%"
+        android:pivotY="6%"
+        />
+    <rotate
+        android:duration="250"
+        android:startOffset="900"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        android:fromDegrees="0.0"
+        android:toDegrees="-15.0"
+        android:pivotX="47%"
+        android:pivotY="6%"
+        />
+    <rotate
+        android:duration="200"
+        android:startOffset="1150"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        android:fromDegrees="0.0"
+        android:toDegrees="10.0"
+        android:pivotX="47%"
+        android:pivotY="6%"
+        />
+    <rotate
+        android:duration="200"
+        android:startOffset="1350"
+        android:fillAfter="true"
+        android:fillEnabled="true"
+        android:fromDegrees="0.0"
+        android:toDegrees="-5.0"
+        android:pivotX="47%"
+        android:pivotY="6%"
+        />
+
+</set>

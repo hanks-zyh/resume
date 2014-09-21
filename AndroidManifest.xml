@@ -25,6 +25,7 @@
         </activity>
         <activity android:name="com.zyh.resume.GuideActivity" />
         <activity android:name="com.zyh.resume.HomeActivity" />
+        <activity android:name="com.zyh.resume.Project1Activity" />
     </application>
 
 </manifest>

@@ -4,5 +4,25 @@
     <string name="app_name">简历</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    <string name="skill">
+ 1.熟悉Android平台应用程序开发,有实际的项目开发经验\n
+ 2.具有有独立开发并上线安卓应用的经验;有良好的编程习惯,有较强的问题解决能力;\n
+ 3.扎实的Java语言基础,熟悉面向对象编程,具有软件设计能力,了解软件工程相关知识\n
+ 4.熟悉AndroidSDK,熟悉Eclipse集成开发环境,了解Android Framework,对相应API能熟练掌握。熟悉Android Sqlite数据库操作.\n
+ 5.熟练掌握Android平台UI设计,熟悉界面特效开发\n
+ 6.良好的解决问题和逻辑分析能力,良好的团队工作和沟通技巧\n
+ 7.能够掌握 Android架构下网络通信机制,对Socket通信.TCP/IP和HTTP有较深刻的理解和经验,有网络编程经验\n</string>
+    <string name="project1">
+开发环境：Eclipse.android SDK\n
+项目简介：基于android的查询空闲教室的手机应用\n\n
+作品特色：\n
+1.学号快捷登录,省去注册,同时支持第三方平台绑定信息。\n
+2.快速定位用户位置,根据当前时间和预计人数智能推荐附近空闲教室。\n
+3.可查看各教室使用情况,方便管理人员管理教学资源。\n\n
+关键技术：\n
+1.基于http协议抓取网络数据。\n
+2.利用HTML解析技术对网络数据进行解析,将其转换成利于手机客户端显示的格式。\n
+3.获取定位信息,快速查询附近空闲教室。\n
+4.收藏个人喜欢的教室,保存到云端。\n
+</string>
 </resources>

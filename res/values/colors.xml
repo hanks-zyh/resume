@@ -5,6 +5,8 @@
     <color name="main_red">#E55948</color>
     <color name="main_blue">#38BEDB</color>
     <color name="main_green">#1BBA9E</color>
-    <color name="main_orange">#FAA21C</color>
+    <color name="main_orange">#FFF100</color>
     <color name="main_text">#5E6E75</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>
