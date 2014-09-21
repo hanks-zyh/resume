@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/main_bg"
     android:orientation="vertical" >
 
     <!-- 标题 -->
@@ -10,11 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="100dp" >
 
-        <View
-            style="@style/View_Line_V"
-            android:background="@color/main_red" />
-
         <LinearLayout
+            android:id="@+id/ll_head"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:background="@color/main_red"
@@ -58,7 +56,12 @@
                 android:textSize="12sp" />
         </LinearLayout>
 
+        <View
+            style="@style/View_Line_V"
+            android:background="@color/main_red" />
+
         <ImageView
+            android:id="@+id/iv_photo"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_marginLeft="10dp"
@@ -66,224 +69,16 @@
             android:src="@drawable/photo" />
     </RelativeLayout>
 
-    <!--     android:layoutAnimation="@anim/listview_anim" -->
-    <ScrollView
+    <!-- android:layoutAnimation="@anim/listview_anim" -->
+
+    <ListView
+        android:id="@+id/lv"
         style="@style/LL_M_M_V"
         android:animationCache="true"
-    
+        android:divider="#0000"
+        android:dividerHeight="0dp"
+        android:layoutAnimation="@anim/listview_anim"
         android:scrollbars="none" >
-
-        <LinearLayout style="@style/LL_M_M_V" >
-
-            <!-- 基本信息 -->
-
-            <LinearLayout style="@style/LL_M_W_H" >
-
-                <View
-                    style="@style/View_Line_V"
-                    android:background="@color/main_red" />
-
-                <LinearLayout
-                    style="@style/LL_M_W_V"
-                    android:paddingBottom="5dp"
-                    android:paddingTop="10dp" >
-
-                    <TextView
-                        style="@style/Text_line1"
-                        android:drawableLeft="@drawable/about_base"
-                        android:drawableStart="@drawable/about_base"
-                        android:text="基本信息   WHO AM I" />
-
-                    <TextView
-                        style="@style/Text_line2"
-                        android:text="姓名：张玉涵\t\t年龄：20岁\t" />
-
-                    <LinearLayout
-                        style="@style/LL_M_W_H"
-                        android:layout_marginTop="8dp" >
-
-                        <TextView
-                            style="@style/Text_line3"
-                            android:drawableLeft="@drawable/about_experience"
-                            android:drawableStart="@drawable/about_experience"
-                            android:text="18236887539" />
-
-                        <TextView
-                            style="@style/Text_line3"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginStart="5dp"
-                            android:drawableLeft="@drawable/about_purpose"
-                            android:drawableStart="@drawable/about_purpose"
-                            android:text="1161745215@qq.com" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- 求职意向 -->
-
-            <LinearLayout
-                style="@style/LL_M_W_H"
-                android:background="@color/main_orange" >
-
-                <View
-                    style="@style/View_Line_V"
-                    android:background="@color/white" />
-
-                <LinearLayout
-                    style="@style/LL_M_W_V"
-                    android:paddingTop="10dp" >
-
-                    <TextView
-                        style="@style/Text_line1"
-                        android:drawableLeft="@drawable/about_base"
-                        android:drawableStart="@drawable/about_base"
-                        android:text="求职意向 "
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        style="@style/Text_line2"
-                        android:text="工作性质：实习"
-                        android:textColor="@color/main_red" />
-
-                    <TextView
-                        style="@style/Text_line2"
-                        android:text="目标职能：Android开发"
-                        android:textColor="@color/main_red" />
-
-                    <TextView
-                        style="@style/Text_line2"
-                        android:text="目标城市：	深圳"
-                        android:textColor="@color/main_red" />
-                </LinearLayout>
-            </LinearLayout>
-            <!-- 个人专长    android:visibility="gone" -->
-
-            <LinearLayout
-                style="@style/LL_M_W_H"
-                android:background="@color/main_blue" >
-
-                <View
-                    style="@style/View_Line_V"
-                    android:background="@color/white" />
-
-                <LinearLayout
-                    style="@style/LL_M_W_V"
-                    android:paddingTop="10dp" >
-
-                    <TextView
-                        style="@style/Text_line1"
-                        android:drawableLeft="@drawable/about_base"
-                        android:drawableStart="@drawable/about_base"
-                        android:text="个人专长"
-                        android:textColor="@color/white" />
-
-                    <TextView
-                        style="@style/Text_line2"
-                        android:text="@string/skill"
-                        android:textColor="@color/white" />
-                </LinearLayout>
-            </LinearLayout>
-            <!-- APP项目 -->
-
-            <LinearLayout
-                style="@style/LL_M_W_H"
-                android:background="@color/main_green" >
-
-                <View
-                    style="@style/View_Line_V"
-                    android:background="@color/white" />
-
-                <LinearLayout
-                    style="@style/LL_M_W_V"
-                    android:paddingTop="10dp" >
-
-                    <TextView
-                        style="@style/Text_line1"
-                        android:drawableLeft="@drawable/about_base"
-                        android:drawableStart="@drawable/about_base"
-                        android:text="APP 项目"
-                        android:textColor="@color/white" />
-
-                    <LinearLayout
-                        android:id="@+id/ll_p1"
-                        style="@style/LL_M_W_H"
-                        android:paddingTop="10dp" >
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/ic_p1" />
-
-                        <TextView
-                            style="@style/Text_line1"
-                            android:layout_gravity="bottom"
-                            android:text="空闲教室查询"
-                            android:textColor="@color/white" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/ll_p2"
-                        style="@style/LL_M_W_H"
-                        android:paddingTop="10dp" >
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/ic_p2" />
-
-                        <TextView
-                            style="@style/Text_line1"
-                            android:layout_gravity="bottom"
-                            android:text="闪电备份"
-                            android:textColor="@color/white" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-            <!-- 求职意向 -->
-
-            <LinearLayout
-                style="@style/LL_M_W_H"
-                android:background="@color/black" >
-
-                <View
-                    style="@style/View_Line_V"
-                    android:background="@color/white" />
-
-                <LinearLayout
-                    style="@style/LL_M_W_V"
-                    android:layout_height="120dp"
-                    android:paddingTop="10dp" >
-
-                    <TextView
-                        style="@style/Text_line2"
-                        android:text="为了让您了解更多,所以简历略长,感谢看完,我叫张玉涵"
-                        android:textColor="@color/white" />
-
-                    <LinearLayout
-                        style="@style/LL_M_W_H"
-                        android:layout_marginTop="8dp" >
-
-                        <TextView
-                            style="@style/Text_line3"
-                            android:drawableLeft="@drawable/about_experience"
-                            android:drawableStart="@drawable/about_experience"
-                            android:text="18236887539"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            style="@style/Text_line3"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginStart="5dp"
-                            android:drawableLeft="@drawable/about_purpose"
-                            android:drawableStart="@drawable/about_purpose"
-                            android:text="1161745215@qq.com"
-                            android:textColor="@color/white" />
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </ScrollView>
+    </ListView>
 
 </LinearLayout>

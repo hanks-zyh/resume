@@ -2,13 +2,13 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
     </style>
 
@@ -30,7 +30,7 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:orientation">vertical</item>
     </style>
-    
+
     <style name="LL_M_W_H">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -56,12 +56,11 @@
         <item name="android:orientation">vertical</item>
     </style>
 
-
     <style name="Text_line1" parent="android:Widget.Holo.Light.TextView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginRight">10dp</item>
         <item name="android:textColor">@color/main_red</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textStyle">bold</item>
@@ -76,14 +75,18 @@
     </style>
 
     <style name="Text_line3" parent="android:Widget.Holo.Light.TextView">
-         <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
     </style>
+
     <style name="View_Line_V">
-         <item name="android:layout_marginRight">10dp</item>
-         <item name="android:layout_marginLeft">15dp</item>
-         <item name="android:layout_width">2dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_width">2dp</item>
         <item name="android:layout_height">match_parent</item>
     </style>
+
 </resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LL_M_W_H" >
+
+    <!-- 基本信息 -->
+    <View
+        style="@style/View_Line_V"
+        android:background="@color/main_red" />
+    <LinearLayout
+        style="@style/LL_M_W_V"
+        android:paddingBottom="5dp" >
+        <TextView
+            android:id="@+id/title_text"
+            style="@style/Text_line1"
+            android:drawableLeft="@drawable/ic_base"
+            android:drawableStart="@drawable/ic_base"
+            android:text="基本信息   WHO AM I" />
+        <TextView
+            android:layout_marginLeft="5dp"
+            style="@style/Text_line2"
+            android:text="姓名：张玉涵\t\t年龄：20岁\t" />
+        <LinearLayout
+            style="@style/LL_M_W_H"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                style="@style/Text_line3"
+                android:drawableLeft="@drawable/ic_phone_gray"
+                android:text="18236887539" />
+
+            <TextView
+                style="@style/Text_line3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
+                android:drawableLeft="@drawable/ic_mail_gray"
+                android:drawableStart="@drawable/ic_mail_gray"
+                android:text="1161745215@qq.com" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -4,14 +4,14 @@
     <string name="app_name">简历</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="skill">
+     <string name="skill">
  1.熟悉Android平台应用程序开发,有实际的项目开发经验\n
  2.具有有独立开发并上线安卓应用的经验;有良好的编程习惯,有较强的问题解决能力;\n
- 3.扎实的Java语言基础,熟悉面向对象编程,具有软件设计能力,了解软件工程相关知识\n
- 4.熟悉AndroidSDK,熟悉Eclipse集成开发环境,了解Android Framework,对相应API能熟练掌握。熟悉Android Sqlite数据库操作.\n
- 5.熟练掌握Android平台UI设计,熟悉界面特效开发\n
- 6.良好的解决问题和逻辑分析能力,良好的团队工作和沟通技巧\n
- 7.能够掌握 Android架构下网络通信机制,对Socket通信.TCP/IP和HTTP有较深刻的理解和经验,有网络编程经验\n</string>
+ 3.熟悉AndroidSDK,熟悉Eclipse集成开发环境,了解Android Framework,对相应API能熟练掌握。熟悉Android Sqlite数据库操作.\n
+ 4.熟练掌握Android平台UI设计,熟悉界面特效开发\n
+ 5.能够掌握 Android架构下网络通信机制,对Socket通信.TCP/IP和HTTP有较深刻的理解和经验,有网络编程经验\n</string>
+ 6.扎实的Java语言基础,熟悉面向对象编程,具有软件设计能力,了解软件工程相关知识\n
+ 7.具有解决问题和逻辑分析能力,良好的团队工作和沟通技巧\n
     <string name="project1">
 开发环境：Eclipse.android SDK\n
 项目简介：基于android的查询空闲教室的手机应用\n\n
@@ -25,4 +25,8 @@
 3.获取定位信息,快速查询附近空闲教室。\n
 4.收藏个人喜欢的教室,保存到云端。\n
 </string>
+    <string name="title_skill">专业技能\tPROFESSIONAL</string>
+    <string name="title_project">上线APP\tSOME WORKS</string>
+    <string name="title_purpose">求职意向\tI WANT TO DO</string>
+    <string name="title_base">基本信息\tWHO AM I</string>
 </resources>

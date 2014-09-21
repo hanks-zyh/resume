@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LL_M_W_H"
+    android:minHeight="160dp"
+    android:background="@color/black" >
+
+    <!-- 最后 -->
+
+    <View
+        style="@style/View_Line_V"
+        android:background="@color/main_green" />
+
+    <LinearLayout
+        style="@style/LL_M_W_V"
+        android:paddingTop="10dp" >
+        <TextView
+            android:gravity="center"
+            style="@style/Text_line2"
+            android:text="简历略长,感谢看完,我叫张玉涵"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            style="@style/LL_M_W_H"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:gravity="center"
+                style="@style/Text_line3"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawableStart="@drawable/ic_phone"
+                android:text="18236887539"
+                android:textColor="@color/white" />
+
+            <TextView
+                style="@style/Text_line3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="5dp"
+                android:drawableLeft="@drawable/ic_mail"
+                android:drawableStart="@drawable/ic_mail"
+                android:text="1161745215@qq.com"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Text_line3"
+            android:drawableLeft="@drawable/ic_blog"
+            android:drawableStart="@drawable/ic_blog"
+            android:text="http://blog.csdn.net/hpu_zyh"
+            android:textColor="@color/white" />
+
+        <TextView
+            style="@style/Text_line3"
+            android:drawableLeft="@drawable/ic_github"
+            android:drawableStart="@drawable/ic_github"
+            android:text="https://github.com/18236887539"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

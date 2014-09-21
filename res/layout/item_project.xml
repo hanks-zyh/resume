@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LL_M_W_H"
+    android:background="@color/main_green" >
+
+    <!-- APP项目 -->
+
+    <View
+        style="@style/View_Line_V"
+        android:background="@color/main_blue" />
+
+    <LinearLayout
+        style="@style/LL_M_W_V"
+        android:paddingTop="10dp" >
+        <TextView
+            style="@style/Text_line1"
+            android:drawableLeft="@drawable/ic_app"
+            android:drawableStart="@drawable/ic_app"
+            android:text="@string/title_project"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/ll_p1"
+            style="@style/LL_M_W_H"
+            android:gravity="center_vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="@dimen/project_icon_size"
+                android:layout_height="@dimen/project_icon_size"
+                android:src="@drawable/ic_p1" />
+
+            <LinearLayout
+                style="@style/LL_M_M_V"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    style="@style/Text_line2"
+                    android:text="项目名称：空闲教室查询"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/Text_line3"
+                    android:layout_marginTop="5dp"
+                    android:text="一款基于Android的空闲教室查询应用"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_p2"
+            style="@style/LL_M_W_H"
+            android:gravity="center_vertical"
+            android:padding="5dp" >
+
+            <ImageView
+                android:layout_width="@dimen/project_icon_size"
+                android:layout_height="@dimen/project_icon_size"
+                android:src="@drawable/ic_p2" />
+
+            <LinearLayout
+                style="@style/LL_M_M_V"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    style="@style/Text_line2"
+                    android:text="项目名称：闪电备份"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    style="@style/Text_line3"
+                    android:layout_marginTop="5dp"
+                    android:text="手机数据备份"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
