@@ -4,7 +4,7 @@ resume
 a resume app running on android 
 
 
-###开发的项目
+### 开发的项目
 
 **Conquer**
 github地址: https://github.com/hanks-zyh/Conquer
@@ -29,14 +29,17 @@ github地址: https://github.com/hanks-zyh/FlyWoo
 
 
 ---
-个人网站：http://hanks.xyz
-github：https://github.com/hanks-zyh
-技术博客：http://blog.csdn.net/hpu_zyh
+
+- [个人网站](http://hanks.xyz)：http://hanks.xyz
+
+- [github](https://github.com/hanks-zyh)：https://github.com/hanks-zyh
+
+- [技术博客](http://blog.csdn.net/hpu_zyh)：http://blog.csdn.net/hpu_zyh
  
 ---
 
 
-###简历
+### 简历 
 
 ![](http://file.bmob.cn/M00/7B/A8/oYYBAFToc9GAP6PNAAysTRYex_0787.png)
 
